@@ -1,28 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* common styles or utilize  */
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
 }
-/* -------------
-top players style 
-------------------- */
 main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center;  */
+    
+    flex-direction: column;
+    align-items: center;
+   
+
 }
 .container{
     background-color: #ffff;
     width: 870px;
     padding: 30px;
-
+    margin-top: 21px;
+    border-radius: 5px;
+   
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 27px;
+}
+/* -------------
+top players style 
+------------------- */
+.top-players{
+    margin-bottom: 30px;
 }
 .section-title{
     color: #562EFF;
     font-size: 24px;
+    margin-top: 3px;
 }
 .players{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
+    grid-row-gap: 30px;
 }
 .player{
     display: flex;
@@ -35,4 +53,83 @@ main{
 }
 .player-name{
     margin-left: 16px;
+    font-size: 18px;
 }
+/*------------------------------
+      top blogs styles
+ ----------------------- */
+ .blogs{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-row-gap: 30px;
+ }
+ .blog{
+     display: flex;
+     
+ }
+ .thumbnail img{
+     width: 177px;
+     height: 117px;
+ }
+ .blog-info{
+     margin-left: 16px;
+ }
+ .blog-title{
+     font-size: 20px;
+ }
+ .blog-author{
+     color:  #9F9F9F;
+     font-size: 16px;
+ }
+ .blog-author a{
+     text-decoration: none;
+     color: #562EFF;
+     font-size: 16px;
+ }
+ /*-------------------
+         courses style
+  ------------------------ */
+  .courses{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+  }
+  .course{
+      border-radius: 5px;
+      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.05);
+      padding: 12px;
+      margin-left: 12px;
+     
+  }
+  .course-banner img{
+      width: 224px;
+      height: 104px;
+  }
+  .course-info{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  span{
+      font-size: 14px;
+  }
+  .fas{
+      font-size: 12px;
+  }
+  .fa-star.filled{
+      color: #ffc014;
+  }
+  .fa-star.empty{
+      color: #aeaeae;
+  }
+  .time-color{
+      font-size: 14px;
+      border-radius: 14px;
+      color: #FF4A60;
+      background: #FEE5DF;
+      padding: 5px;
+
+  }
+  .fa-clock{
+      font-size: 14px;
+  }
+  
